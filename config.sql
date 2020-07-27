@@ -1,0 +1,11 @@
+CREATE TABLE `web`.`files_tb` ( `id` INT NOT NULL AUTO_INCREMENT , `name_file` VARCHAR(255) NOT NULL , `create_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB
+
+CREATE TABLE `web`.`like_post`
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `post_like` INT NOT NULL,
+    `create_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`
+))
+ENGINE = InnoDB;
+ALTER TABLE `like_post` ADD `username_like` VARCHAR(80) NOT NULL AFTER `create_at`;

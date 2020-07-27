@@ -1,0 +1,3 @@
+switch (new Date().getDay()) {
+    
+}

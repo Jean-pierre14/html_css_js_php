@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html css php js</title>
+    <style>
+        input{
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=text],input[type=password],input[type=email],input[type=date]{
+            width: 90%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Html</legend>
+        <form action="" method="post" autocomplete="off">            
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Username"></td>
+                    <td id="error"></td>
+                </tr>
+                        
+                        
+                <tr>
+                    <td><label for="sname">Second name</label></td>
+                    <td><input type="text" id="sname" name="sname" placeholder="second name"></td>
+                </tr>
+                        
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="email"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="date">Date</label></td>
+                    <td><input type="date" id="date" name="date"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lang">Languages:</label></td>
+                </tr>
+
+                <tr style="margin-top:-90px">
+                    <td></td>
+                    <td style="border: 1px solid #ccc;padding:10px;border-radius: 5px;">
+                        <label for="en"><input type="checkbox" name="english" id="en">English</label><br>
+                        <label for="ch"><input type="checkbox" name="english" id="ch">Chinise</label><br>
+                        <label for="sp"><input type="checkbox" name="english" id="sp">Spanish</label><br>
+                        <label for="fr"><input type="checkbox" name="english" id="fr">French</label><br>
+                        <label for="ko"><input type="checkbox" name="english" id="ko">Korean</label><br>
+                        <label for="li"><input type="checkbox" name="english" id="li">Lingala</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Radio:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="border: 1px solid #ccc;padding:10px;border-radius: 5px;">
+                        <label for="one"><input type="radio" name="one" id="one">One</label><br>
+                        <label for="two"><input type="radio" name="two" id="two">Two</label><br>
+                        <label for="three"><input type="radio" name="three" id="three">Three</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select a State</td>
+                    <td>
+                        <select name="state1" id="state" style="width: 100%;;border: 1px solid #ccc;padding:10px;border-radius: 5px;">
+                            <option>Select a state</option>
+                            <option>DRC</option>
+                            <option>RWANDA</option>
+                            <option>UGANDA</option>
+                            <option>TANZANIA</option>
+                            <option>MALI</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="txt">Comments:</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <textarea name="txt" id="" cols="30" rows="5" placeholder="Enter your comment" style="border:1px solid #ccc;border-radius:5px"></textarea>
+                    </td>
+                </tr>
+            </table>
+            
+
+            <input type="submit" name="register" value="Register" style="margin-left:93px">
+            <button style="padding:8px;border:1px solid #ccc;border-radius: 5px;">Button</button>
+            <button title="My website ngweshe.com" style="float: right;padding:5px;box-shadow: 2px 2px 4px #000;border:0;border-radius:5px;">&copy; jean-pierre.com </button>
+        </form>
+    </fieldset>
+
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/txt.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            let error = $('#error').val();
+            $('#username').keyup(function(){
+                var txt = $('#usename').val();
+
+                error.val() = txt;
+            })
+
+            
+            $('#username').keyup( function(){
+            let txt = $(this).val();
+
+            if(txt != ''){
+                $.ajax({
+                    url: 'add.php',
+                    method: 'post',
+                    data:{
+                        search: txt
+                    },
+                    dataType: 'text',
+                    success: function(data){
+                        $('#result').html(data);
+                        $('.list-n').hide(300)
+                    }
+                });
+            }else {
+                $('#result').html('');
+                $('.list-n').show(250)
+            }
+        });
+        })
+    </script> -->
+</body>
+</html>
